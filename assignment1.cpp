@@ -15,7 +15,7 @@ void rockPaperScissors() {
 
     cout << "Computer chose: " << compChoice << endl;
 
-    if (playerChoiceChoice == compChoice) {
+    if (playerChoice == compChoice) {
         cout << "It's a tie!" << endl;
     } else if ((playerChoice == 0 && compChoice == 2) ||
                (playerChoice == 1 && compChoice == 0) ||
