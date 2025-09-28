@@ -138,8 +138,8 @@ void searchByName(const Contact contacts[], int count, const std::string& name) 
 
 int main() {
     // test 1
-    std::cout << "=== Part 1: Custom strlen & strcpy ===\n";
-    const char* inputStr = "UAB-CS";
+    std::cout << " Custom strlen & strcpy \n";
+    const char* inputStr = "Butterflies";
     std::cout << "Input string: " << inputStr << "\n";
     std::cout << "myStrlen: " << myStrlen(inputStr) << "\n";
     char dest[50];
@@ -147,15 +147,15 @@ int main() {
     std::cout << "After myStrcpy, destination: " << dest << "\n\n";
 
     // test 2
-    std::cout << "=== Part 2: Count Character Occurrences ===\n";
-    std::string s = "UAB-CS-UAB";
+    std::cout << " Count Character Occurrences \n";
+    std::string s = "BABY-BIRD-BALL";
     char target = 'A';
     std::cout << "String: " << s << "\nTarget char: " << target << "\n";
     std::cout << "std::string version: " << countChar(s, target) << "\n";
     std::cout << "C-string version: " << countChar(s.c_str(), target) << "\n\n";
 
     // test 3
-    std::cout << "=== Part 3: Array Statistics ===\n";
+    std::cout << " Array Statistics \n";
     int numbers[10];
     std::cout << "Enter 10 integers: ";
     for (int i = 0; i < 10; ++i) std::cin >> numbers[i];
@@ -168,7 +168,7 @@ int main() {
     std::cout << "\n";
 
     // test 4
-    std::cout << "=== Part 4: Simple Address Book ===\n";
+    std::cout << " Simple Address Book \n";
     Contact contacts[10];
     int count = 0, choice;
 
