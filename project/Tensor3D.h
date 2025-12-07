@@ -31,7 +31,7 @@ public:
         rows = vals.begin()->size();
         cols = (rows > 0) ? vals.begin()->begin()->size() : 0;
 
-        data.reserve(depth); // optional: reserve capacity for depth slices
+        data.reserve(depth); // reserve capacity for depth slices
         // build each slice
         for (auto &slice : vals) {
             if (slice.size() != rows) // all slices must have same number of rows
